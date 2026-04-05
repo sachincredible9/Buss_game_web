@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunny Learning | Official Hub</title>
+    <meta name="description" content="Portfolio and Privacy Hub for Bunny Learning. Safe and transparent educational gaming for kids.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <header class="glass-nav">
+        <div class="container nav-content">
+            <div class="logo">
+                <span class="logo-text">Bunny <span class="accent">Learning</span></span>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#apps">Apps</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="privacy/">Privacy</a></li>
+                    <li><a href="#contact">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section">
+            <div class="container hero-content">
+                <h1 class="fade-in">Play, Learn, <span class="accent">Grow.</span></h1>
+                <p class="subtitle fade-in-delay">Building premium educational experiences for the next generation. Safe, fun, and ad-free.</p>
+                <div class="hero-cta fade-in-delay">
+                    <a href="#apps" class="btn btn-primary">Our Apps</a>
+                    <a href="#contact" class="btn btn-outline" id="btn-contact-hero">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="apps" class="section">
+            <div class="container">
+                <h2 class="section-title">Games & Apps</h2>
+                <div class="apps-grid" id="apps-container">
+                    <!-- Featured App: Bunny Learning -->
+                    <div class="app-card featured glass-card" id="app-bunny-learning">
+                        <div class="app-info">
+                            <span class="badge">Live Now</span>
+                            <h3>Bunny Learning</h3>
+                            <p>An interactive multilingual learning app. Explore numbers, letters, and colors in English, Hindi, Spanish, and French.</p>
+                            <div class="app-links">
+                                <a href="https://apps.apple.com/app/bunny-learning" class="store-btn external-link">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.bunny.learning" class="store-btn external-link">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="app-visual">
+                             <div class="bunny-placeholder" id="bunny-visual">🐰</div>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon Grid -->
+                    <div class="coming-soon-grid" id="coming-soon-container">
+                        <div class="app-card mini glass-card" id="app-shape-runner">
+                            <span class="status">Coming Soon</span>
+                            <h4>Shape Runner</h4>
+                            <p>Geometry made fun through endless runner mechanics.</p>
+                        </div>
+                        <div class="app-card mini glass-card" id="app-color-match">
+                            <span class="status">Coming Soon</span>
+                            <h4>Color Match Pro</h4>
+                            <p>Advanced color mixing and painting.</p>
+                        </div>
+                        <div class="app-card mini glass-card" id="app-math-quest">
+                            <span class="status">Coming Soon</span>
+                            <h4>Math Quest</h4>
+                            <p>RPG adventure powered by arithmetic.</p>
+                        </div>
+                        <div class="app-card mini glass-card" id="app-word-explorer">
+                            <span class="status">Coming Soon</span>
+                            <h4>Word Explorer</h4>
+                            <p>Multiple language discovery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section glass-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-accordion" id="faq-list">
+                    <details class="glass-card" id="faq-safety">
+                        <summary>Is Bunny Learning safe for kids?</summary>
+                        <p>Yes! We adhere to strict COPPA and GDPR-K regulations. No ads, no data tracking, and no hidden IAP without parental consent.</p>
+                    </details>
+                    <details class="glass-card" id="faq-languages">
+                        <summary>What languages are supported?</summary>
+                        <p>Currently: English, Hindi, Spanish, and French. More coming soon!</p>
+                    </details>
+                    <details class="glass-card" id="faq-support">
+                        <summary>How can I request support?</summary>
+                        <p>You can reach out to our team via the contact link below or our social media channels.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-content glass-card" id="contact-hub">
+                <h2>Support & Contact</h2>
+                <p>Have questions or feedback? We'd love to hear from you.</p>
+                <div class="contact-info" style="margin-top: 30px;">
+                    <a href="#" class="btn btn-primary" onclick="return false;">Contact Support</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="container">
+            <p>&copy; 2026 Bunny Learning. All Rights Reserved.</p>
+            <div class="footer-links" id="footer-nav">
+                <a href="privacy/" id="footer-privacy">Privacy Policy</a>
+                <a href="privacy/terms.html" id="footer-terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Parental Gate Modal -->
+    <div id="parental-gate" class="modal-overlay hidden">
+        <div class="modal glass-card">
+            <h3>Parents Only</h3>
+            <p>To continue, please solve this simple math problem:</p>
+            <div class="challenge" id="math-challenge">
+                <span id="num1"></span> + <span id="num2"></span> = ?
+            </div>
+            <input type="number" id="gate-answer" placeholder="Enter answer">
+            <button id="gate-submit" class="btn btn-primary">Proceed</button>
+            <button id="gate-cancel" class="btn btn-link">Cancel</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
