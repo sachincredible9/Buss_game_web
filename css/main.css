@@ -330,3 +330,20 @@ input[type="number"] {
     .app-card.featured { grid-template-columns: 1fr; }
     nav { display: none; }
 }
+
+/* New Trust & Status Styles */
+.about-content p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 800px;
+}
+
+.status-note {
+    font-size: 0.9rem;
+    color: var(--primary);
+    background: rgba(108, 92, 231, 0.1);
+    padding: 10px 20px;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary);
+    width: 100%;
+}
